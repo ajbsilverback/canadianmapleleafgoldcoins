@@ -1,0 +1,6 @@
+# https://www.americaneaglegoldcoin.com robots.txt
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.americaneaglegoldcoin.com/sitemap.xml

@@ -1,0 +1,78 @@
+import { NextResponse } from "next/server";
+
+const llmsTxt = `# AmericanEagleGoldCoin.com - LLMs.txt
+
+> An independent educational resource about American Gold Eagle coins
+
+## Site Overview
+
+AmericanEagleGoldCoin.com provides educational content about American Gold Eagle coins, America's most popular gold bullion coin minted by the U.S. Mint with .9167 fine purity (22-karat).
+
+## What This Site Is
+
+- Independent educational resource
+- Information about American Gold Eagle coins
+- Live gold pricing data from Monex API
+- Educational articles about gold coin investing
+
+## What This Site Is NOT
+
+- Not a dealer (we do not sell precious metals)
+- Not affiliated with Monex, the U.S. Mint, or any dealers
+- Not financial advisors (no investment advice)
+- No endorsements of dealers or services
+
+## Key Topics Covered
+
+- American Gold Eagle coin specifications (.9167 fine, 1 oz, $50 face value)
+- Gold Eagle vs Gold Buffalo vs Maple Leaf comparisons
+- Premium and pricing dynamics
+- IRA eligibility for Gold Eagle coins
+- Storage and authentication
+- Market dynamics affecting gold prices
+
+## Product Focus
+
+The American Gold Eagle is:
+- 22-karat gold (.9167 fine purity)
+- 1 troy ounce of pure gold (1.0909 oz total weight)
+- U.S. legal tender with $50 face value
+- First minted in 1986
+- IRA-eligible
+- Features Augustus Saint-Gaudens' Walking Liberty design
+
+## Pricing Data
+
+- Product pricing uses Monex API symbol: AE (American Eagle)
+- Spot pricing uses Monex API symbol: GBXSPOT
+- Prices fetched fresh on page load only
+- No real-time updates or polling
+
+## Navigation
+
+- Home: /
+- Gold Prices: /live-gold-prices
+- Coin Specs: /coin-specs
+- Design & History: /design-history
+- Where to Buy: /where-to-buy
+- Resources: /resources
+- About: /about
+
+## Contact
+
+Website: https://www.americaneaglegoldcoin.com
+
+## Disclaimer
+
+All content is for educational purposes only. Gold investments carry risks. This site does not provide financial advice. Consult qualified professionals before making investment decisions.
+`;
+
+export async function GET() {
+  return new NextResponse(llmsTxt, {
+    status: 200,
+    headers: {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Cache-Control": "public, max-age=86400",
+    },
+  });
+}
