@@ -10,24 +10,24 @@ import { pricesQA } from "@/data/qa-content";
 import { fetchProductSpot, fetchMetalSpotIndex, formatUSD } from "@/lib/monexSpot";
 
 export const metadata: Metadata = {
-  title: "Live American Gold Eagle Prices & Gold Spot Price Charts",
+  title: "Live Canadian Gold Maple Leaf Prices & Gold Spot Price Charts",
   description:
-    "Track live American Gold Eagle prices and gold spot prices with interactive charts. Understand premiums, bid-ask spreads, and market dynamics for informed gold coin investing.",
+    "Track live Canadian Gold Maple Leaf prices and gold spot prices with interactive charts. Understand premiums, bid-ask spreads, and market dynamics for informed gold coin investing.",
   alternates: {
     canonical: `${SITE_CONFIG.canonicalDomain}/live-gold-prices`,
   },
   openGraph: {
-    title: "Live American Gold Eagle Prices & Gold Spot Price Charts",
+    title: "Live Canadian Gold Maple Leaf Prices & Gold Spot Price Charts",
     description:
-      "Track live American Gold Eagle prices and gold spot prices with interactive charts. Understand premiums and market dynamics.",
+      "Track live Canadian Gold Maple Leaf prices and gold spot prices with interactive charts. Understand premiums and market dynamics.",
     url: `${SITE_CONFIG.domain}/live-gold-prices`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Live American Gold Eagle Prices & Gold Spot Price Charts",
+    title: "Live Canadian Gold Maple Leaf Prices & Gold Spot Price Charts",
     description:
-      "Track live American Gold Eagle prices and gold spot prices with interactive charts and market data.",
+      "Track live Canadian Gold Maple Leaf prices and gold spot prices with interactive charts and market data.",
   },
 };
 
@@ -41,15 +41,15 @@ export default async function PricesPage() {
   const formatSpotPrice = (price: number) => formatUSD(price).replace(".00", "");
   
   // Calculate example prices based on current spot
+  const maplePrice = Math.round(spotPerOz * 1.03);  // 3% premium
   const eaglePrice = Math.round(spotPerOz * 1.04);  // 4% premium
-  const buffaloPrice = Math.round(spotPerOz * 1.04); // 4% premium
   
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "American Gold Eagle Price & Live Gold Spot Prices",
+    name: "Canadian Gold Maple Leaf Price & Live Gold Spot Prices",
     description:
-      "Track live American Gold Eagle prices and gold spot prices. Real-time charts and market data for gold coin investors.",
+      "Track live Canadian Gold Maple Leaf prices and gold spot prices. Real-time charts and market data for gold coin investors.",
     url: `${SITE_CONFIG.domain}/live-gold-prices`,
     publisher: {
       "@type": "Organization",
@@ -64,18 +64,18 @@ export default async function PricesPage() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "What determines the price of an American Gold Eagle?",
+        name: "What determines the price of a Canadian Gold Maple Leaf?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The price of an American Gold Eagle consists of the gold spot price plus a premium that covers minting, distribution, and dealer margins. Gold Eagle premiums typically range from 3-5% over spot.",
+          text: "The price of a Canadian Gold Maple Leaf consists of the gold spot price plus a premium that covers minting, distribution, and dealer margins. Gold Maple Leaf premiums typically range from 2-4% over spot.",
         },
       },
       {
         "@type": "Question",
-        name: "Why does the Gold Eagle have a premium over spot price?",
+        name: "Why does the Gold Maple Leaf have a premium over spot price?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The premium covers U.S. Mint production costs, Authorized Purchaser margins, dealer margins, and the value of the coin's .9167 fine purity and legal tender status. Government-minted coins carry premiums for their guaranteed authenticity and liquidity.",
+          text: "The premium covers Royal Canadian Mint production costs, distribution margins, dealer margins, and the value of the coin's .9999 fine purity and legal tender status. Government-minted coins carry premiums for their guaranteed authenticity and liquidity.",
         },
       },
       {
@@ -90,11 +90,11 @@ export default async function PricesPage() {
   };
 
   const aiSummaryBullets = [
-    "This page displays live American Gold Eagle prices via Monex data",
+    "This page displays live Canadian Gold Maple Leaf prices via Monex data",
     "Track gold spot prices per troy ounce for reference",
-    "Understand how spot prices relate to Gold Eagle retail pricing",
-    "Learn about premium structures: Gold Eagle coins have 3-5% premiums",
-    "Compare Gold Eagle pricing to other gold bullion coins",
+    "Understand how spot prices relate to Gold Maple Leaf retail pricing",
+    "Learn about premium structures: Gold Maple Leaf coins have 2-4% premiums",
+    "Compare Gold Maple Leaf pricing to other gold bullion coins",
   ];
 
   return (
@@ -114,7 +114,7 @@ export default async function PricesPage() {
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4">
-              <span className="gold-text">Gold Eagle Price</span>
+              <span className="gold-text">Gold Maple Leaf Price</span>
               <br />
               <span className="text-white">& Live Gold Spot Prices</span>
             </h1>
@@ -124,11 +124,11 @@ export default async function PricesPage() {
 
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed mt-6 text-left">
               Track live gold prices and understand how spot pricing affects 
-              the cost of American Gold Eagle coins. Use these tools to make 
+              the cost of Canadian Gold Maple Leaf coins. Use these tools to make 
               informed decisions about your precious metals investments. Return 
               to our{" "}
               <Link href="/" className="text-bullion-gold hover:underline">
-                Gold Eagle overview
+                Gold Maple Leaf overview
               </Link>{" "}
               or explore our{" "}
               <Link href="/resources" className="text-bullion-gold hover:underline">
@@ -142,7 +142,7 @@ export default async function PricesPage() {
       {/* Pricing Zone - Live Cards */}
       <section className="py-10 md:py-12 section-dark">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-          {/* Live Gold Eagle Price Card */}
+          {/* Live Gold Maple Leaf Price Card */}
           <LiveGoldSpotCard showCta={false} />
 
           {/* Live Gold Spot Index Card */}
@@ -160,29 +160,29 @@ export default async function PricesPage() {
         </div>
       </section>
 
-      {/* Understanding Gold Eagle Pricing */}
+      {/* Understanding Gold Maple Leaf Pricing */}
       <section className="py-12 md:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold mb-6 text-center">
-              Understanding <span className="gold-text">Gold Eagle Pricing</span>
+              Understanding <span className="gold-text">Gold Maple Leaf Pricing</span>
             </h2>
 
             <div className="prose prose-lg prose-invert max-w-none space-y-6">
               <div className="card">
                 <h3 className="text-2xl font-display font-semibold mb-4 text-bullion-gold">
-                  Spot Price vs. Gold Eagle Price
+                  Spot Price vs. Gold Maple Leaf Price
                 </h3>
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  When purchasing an American Gold Eagle, you&apos;ll pay a premium 
+                  When purchasing a Canadian Gold Maple Leaf, you&apos;ll pay a premium 
                   above the spot price. The spot price represents the current market 
                   rate for gold traded in bulk on commodities exchanges.
                 </p>
                 <p className="text-gray-300 leading-relaxed">
-                  Gold Eagle coins typically carry <strong className="text-white">3-5% 
-                  premiums over spot</strong>, which covers U.S. Mint production costs, 
-                  Authorized Purchaser margins, dealer margins, and reflects the coin&apos;s 
-                  .9167 fine purity and legal tender status.
+                  Gold Maple Leaf coins typically carry <strong className="text-white">2-4% 
+                  premiums over spot</strong>, which covers Royal Canadian Mint production costs, 
+                  distribution margins, dealer margins, and reflects the coin&apos;s 
+                  .9999 fine purity and legal tender status.
                 </p>
               </div>
 
@@ -194,16 +194,16 @@ export default async function PricesPage() {
                   <li className="flex items-start">
                     <span className="text-bullion-gold mr-3">•</span>
                     <span>
-                      <strong className="text-white">Minting Costs:</strong> The U.S. Mint 
-                      uses precision manufacturing to achieve exact weight specifications 
-                      and quality standards.
+                      <strong className="text-white">Minting Costs:</strong> The Royal Canadian Mint 
+                      uses precision manufacturing to achieve exact weight specifications, 
+                      security features, and quality standards.
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-bullion-gold mr-3">•</span>
                     <span>
                       <strong className="text-white">Distribution Chain:</strong> Coins 
-                      flow from the Mint to Authorized Purchasers to dealers, each adding 
+                      flow from the Mint through distributors to dealers, each adding 
                       margin for their services.
                     </span>
                   </li>
@@ -219,7 +219,7 @@ export default async function PricesPage() {
                     <span className="text-bullion-gold mr-3">•</span>
                     <span>
                       <strong className="text-white">Strong Liquidity:</strong> Recognized 
-                      worldwide, Gold Eagles are easy to sell, which supports their 
+                      worldwide, Gold Maple Leafs are easy to sell, which supports their 
                       pricing power.
                     </span>
                   </li>
@@ -228,22 +228,22 @@ export default async function PricesPage() {
 
               <div className="card">
                 <h3 className="text-xl md:text-2xl font-display font-semibold mb-4 text-bullion-gold">
-                  Premium Comparison: Eagle vs. Other Coins
+                  Premium Comparison: Maple Leaf vs. Other Coins
                 </h3>
                 <p className="text-gray-300 leading-relaxed mb-3">
-                  American Gold Eagle premiums are comparable to other major gold 
-                  bullion coins:
+                  Canadian Gold Maple Leaf premiums are often slightly lower than 
+                  comparable U.S. coins:
                 </p>
                 <div className="bg-bullion-darker/50 rounded-lg p-4">
                   <p className="text-gray-400 text-sm mb-2">
                     <strong className="text-bullion-gold">Example at {formatSpotPrice(spotPerOz)}/oz spot:</strong>
                   </p>
                   <ul className="text-gray-400 text-sm space-y-2">
+                    <li>• <strong className="text-white">Gold Maple Leaf (~3% premium):</strong> ~{formatSpotPrice(maplePrice)}</li>
                     <li>• <strong className="text-white">Gold Eagle (~4% premium):</strong> ~{formatSpotPrice(eaglePrice)}</li>
-                    <li>• <strong className="text-white">Gold Buffalo (~4% premium):</strong> ~{formatSpotPrice(buffaloPrice)}</li>
-                    <li>• <strong className="text-white">Canadian Maple (~3% premium):</strong> ~{formatSpotPrice(Math.round(spotPerOz * 1.03))}</li>
+                    <li>• <strong className="text-white">Gold Buffalo (~4% premium):</strong> ~{formatSpotPrice(eaglePrice)}</li>
                     <li className="pt-2 border-t border-bullion-gold/20">
-                      <strong className="text-bullion-gold">Eagle advantage:</strong> 22-karat alloy provides superior durability for handling
+                      <strong className="text-bullion-gold">Maple Leaf advantage:</strong> .9999 pure gold with typically lower premiums
                     </li>
                   </ul>
                 </div>
@@ -263,12 +263,12 @@ export default async function PricesPage() {
             For detailed market analysis and pricing information:
           </p>
           <a
-            href="https://www.monex.com/gold-american-eagle-price-charts/"
+            href="https://www.monex.com/gold-canadian-maple-leaf-coins/"
             target="_blank"
             rel="nofollow noopener noreferrer"
             className="inline-flex items-center text-bullion-gold hover:text-bullion-goldLight transition-colors"
           >
-            <span>Research Gold Eagle prices at Monex</span>
+            <span>Research Gold Maple Leaf prices at Monex</span>
             <svg
               className="w-4 h-4 ml-2"
               fill="none"
@@ -290,16 +290,16 @@ export default async function PricesPage() {
       <section className="py-12 md:py-16 section-dark">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-display font-bold mb-4">
-            Gold Eagle Resources
+            Gold Maple Leaf Resources
           </h2>
           <p className="text-gray-400 mb-6">
             Explore our comprehensive{" "}
             <Link href="/resources" className="text-bullion-gold hover:underline">
               educational resources
             </Link>{" "}
-            to deepen your understanding of Gold Eagle investing, or return to our{" "}
+            to deepen your understanding of Gold Maple Leaf investing, or return to our{" "}
             <Link href="/" className="text-bullion-gold hover:underline">
-              American Gold Eagle overview
+              Canadian Gold Maple Leaf overview
             </Link>.
           </p>
           <Link href="/resources" className="btn-primary">

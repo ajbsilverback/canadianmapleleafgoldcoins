@@ -11,6 +11,9 @@ import { resourceQA } from "@/data/qa-content";
 import { fetchProductSpot } from "@/lib/monexSpot";
 import { replaceTokens } from "@/lib/priceTokens";
 
+// Force dynamic rendering for API fetches
+export const dynamic = "force-dynamic";
+
 interface Props {
   params: Promise<{ slug: string }>;
 }
@@ -54,56 +57,56 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 // Generate descriptive Monex anchor text for each article
 function getMonexAnchorText(slug: string): string {
   const anchorTextMap: Record<string, string> = {
-    "premiums-explained": "Monex Gold Eagle price charts",
-    "coin-comparison": "Monex Gold Eagle knowledge base",
-    "storage-options": "Monex Gold Eagle wealth diversification guide",
-    "purity-advantages": "Monex Gold Eagle design history",
-    "liquidity-considerations": "Monex Gold Eagle investment guide",
+    "premiums-explained": "Monex Gold Maple Leaf pricing",
+    "coin-comparison": "Monex gold coins knowledge base",
+    "storage-options": "Monex gold storage guide",
+    "purity-advantages": "Monex Gold Maple Leaf information",
+    "liquidity-considerations": "Monex gold investment guide",
     "market-dynamics": "Monex live gold prices",
-    "spreads-explained": "Monex Gold Eagle price charts",
-    "authentication-guide": "Monex Gold Eagle knowledge base",
-    "ira-eligibility": "Monex Gold Eagle wealth diversification guide",
+    "spreads-explained": "Monex gold pricing data",
+    "authentication-guide": "Monex gold coins knowledge base",
+    "ira-eligibility": "Monex gold IRA information",
     "portfolio-allocation": "Monex investing in gold",
-    "first-time-buyers-guide": "Monex Gold Eagle coins for sale",
-    "tax-considerations": "Monex Gold Eagle investment trends",
+    "first-time-buyers-guide": "Monex Gold Maple Leaf coins",
+    "tax-considerations": "Monex gold investment resources",
   };
-  return anchorTextMap[slug] || "Monex Gold Eagle resources";
+  return anchorTextMap[slug] || "Monex Gold Maple Leaf resources";
 }
 
 // Generate AI summary bullets based on resource content
 function generateAISummaryBullets(slug: string, title: string): string[] {
   const summaryMap: Record<string, string[]> = {
     "premiums-explained": [
-      "This article explains why Gold Eagle coins have premiums over spot",
-      "Learn how premiums of 3-5% compare to other gold bullion coins",
+      "This article explains why Gold Maple Leaf coins have premiums over spot",
+      "Learn how premiums of 2-4% compare to other gold bullion coins",
       "Understand the factors that cause premium fluctuations",
       "Discover strategies to secure the best pricing when purchasing",
       "Compare total cost of ownership for different gold coin options",
     ],
     "coin-comparison": [
-      "This article compares Gold Eagle, Gold Buffalo, and Maple Leaf coins",
-      "Learn the key difference: .9167 purity (Eagle) vs .9999 (Buffalo)",
+      "This article compares Gold Maple Leaf, Gold Eagle, and Gold Buffalo coins",
+      "Learn the key difference: .9999 purity (Maple Leaf) vs .9167 (Eagle)",
       "Understand that all 1 oz coins contain exactly 1 oz of gold",
       "Discover which coin best fits different investment goals",
       "Get guidance on IRA eligibility for each coin type",
     ],
     "storage-options": [
-      "This article covers storage solutions for Gold Eagle coins",
+      "This article covers storage solutions for Gold Maple Leaf coins",
       "Learn about home safes, safe deposit boxes, and vault options",
       "Understand IRA storage requirements at approved depositories",
       "Discover insurance considerations for your gold holdings",
-      "Get guidance on protecting your 22-karat gold coins",
+      "Get guidance on protecting your .9999 pure gold coins",
     ],
     "purity-advantages": [
-      "This article explains the benefits of the Gold Eagle's 22-karat alloy",
-      "Learn how the copper and silver alloy provides scratch resistance",
-      "Understand that Eagles still contain exactly 1 oz of pure gold",
-      "Discover when durability matters for investors",
-      "Compare Eagle and Buffalo for different use cases",
+      "This article explains the benefits of the Gold Maple Leaf's .9999 purity",
+      "Learn why 24-karat gold represents maximum purity",
+      "Understand that Maple Leafs contain exactly 1 oz of pure gold",
+      "Discover how purity affects investor preferences",
+      "Compare Maple Leaf and Eagle for different use cases",
     ],
     "liquidity-considerations": [
-      "This article explains liquidity dynamics for Gold Eagle coins",
-      "Learn how U.S. Mint products ensure strong dealer demand",
+      "This article explains liquidity dynamics for Gold Maple Leaf coins",
+      "Learn how Royal Canadian Mint products ensure strong dealer demand",
       "Understand typical sale timelines (1-2 business days)",
       "Discover strategies for efficient buying and selling",
       "Get guidance on documentation for smooth transactions",
@@ -116,35 +119,35 @@ function generateAISummaryBullets(slug: string, title: string): string[] {
       "Get context for interpreting gold price movements",
     ],
     "spreads-explained": [
-      "This article explains bid-ask spreads on Gold Eagle coins",
-      "Learn why Gold Eagle spreads are typically 2-4%",
+      "This article explains bid-ask spreads on Gold Maple Leaf coins",
+      "Learn why Gold Maple Leaf spreads are typically 2-4%",
       "Understand how spreads affect your total cost of ownership",
       "Discover strategies to minimize spread impact on returns",
       "Calculate your break-even point including spread costs",
     ],
     "authentication-guide": [
-      "This article covers authentication for Gold Eagle coins",
-      "Learn the official specifications: 32.7mm diameter, 2.87mm thick",
-      "Understand professional authentication options (NGC, PCGS)",
-      "Discover visual verification techniques for U.S. Mint coins",
+      "This article covers authentication for Gold Maple Leaf coins",
+      "Learn the official specifications: 30mm diameter, .9999 purity",
+      "Understand security features like radial lines and micro-engraving",
+      "Discover verification techniques for Royal Canadian Mint coins",
       "Get guidance on avoiding counterfeits and red flags",
     ],
     "ira-eligibility": [
-      "This article explains Gold Eagle IRA eligibility",
-      "Learn why Gold Eagles are specifically named in IRS code",
+      "This article explains Gold Maple Leaf IRA eligibility",
+      "Learn why .9999 purity exceeds IRS minimum requirements",
       "Understand custodian and depository requirements",
       "Discover the costs of IRA gold ownership",
       "Compare IRA ownership vs personal possession",
     ],
     "portfolio-allocation": [
-      "This article covers strategic allocation to Gold Eagle coins",
+      "This article covers strategic allocation to Gold Maple Leaf coins",
       "Learn typical gold allocations (5-15% of portfolio)",
       "Understand physical gold vs ETF trade-offs",
       "Discover dollar-cost averaging vs lump-sum strategies",
       "Get guidance on balancing IRA and personal holdings",
     ],
     "first-time-buyers-guide": [
-      "This article guides first-time buyers through Gold Eagle purchases",
+      "This article guides first-time buyers through Gold Maple Leaf purchases",
       "Learn how to evaluate and select reputable dealers",
       "Understand payment methods, settlement, and delivery",
       "Discover why dealer pricing varies and how to compare",
@@ -162,7 +165,7 @@ function generateAISummaryBullets(slug: string, title: string): string[] {
   return summaryMap[slug] || [
     `This article provides comprehensive coverage of ${title.toLowerCase()}`,
     "Learn key concepts and practical considerations for gold coin investors",
-    "Understand how this topic affects your Gold Eagle investment strategy",
+    "Understand how this topic affects your Gold Maple Leaf investment strategy",
     "Get actionable guidance based on industry best practices",
     "Find answers to common questions in this area",
   ];
@@ -320,7 +323,7 @@ export default async function ResourcePage({ params }: Props) {
           {/* Internal Links */}
           <div className="mt-10 p-5 md:p-6 rounded-xl bg-bullion-darker/50 border border-bullion-gold/10">
             <p className="text-gray-400 mb-3 text-sm md:text-base">
-              Continue learning about American Gold Eagle coins:
+              Continue learning about Canadian Gold Maple Leaf coins:
             </p>
             <div className="flex flex-wrap gap-3 md:gap-4">
               <Link
@@ -336,7 +339,7 @@ export default async function ResourcePage({ params }: Props) {
                 href="/where-to-buy"
                 className="inline-flex items-center text-bullion-gold hover:text-bullion-goldLight transition-colors"
               >
-                <span>Where to buy Gold Eagles</span>
+                <span>Where to buy Gold Maple Leafs</span>
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -396,7 +399,7 @@ export default async function ResourcePage({ params }: Props) {
             <p className="text-gray-400 mb-6 max-w-xl mx-auto text-sm md:text-base">
               Explore more{" "}
               <Link href="/resources" className="text-bullion-gold hover:underline">
-                resources about Gold Eagle coins
+                resources about Gold Maple Leaf coins
               </Link>{" "}
               or check{" "}
               <Link href="/live-gold-prices" className="text-bullion-gold hover:underline">

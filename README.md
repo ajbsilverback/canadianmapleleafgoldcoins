@@ -1,23 +1,23 @@
-# AmericanBuffaloGoldCoin.com
+# CanadianMapleLeafGoldCoins.com
 
-An educational microsite about 1 oz American Gold Buffalo coins built with Next.js 15, TypeScript, and Tailwind CSS.
+An educational microsite about 1 oz Canadian Gold Maple Leaf coins built with Next.js 15, TypeScript, and Tailwind CSS.
 
 ## Features
 
-- **Home Page**: Comprehensive overview of American Gold Buffalo coins, including benefits, who buys them, key specifications, and coin comparisons
-- **Gold Prices Page**: Live gold pricing with AB (American Buffalo) and GBXSPOT data, plus educational content about premiums
+- **Home Page**: Comprehensive overview of Canadian Gold Maple Leaf coins, including benefits, who buys them, key specifications, and coin comparisons
+- **Gold Prices Page**: Live gold pricing with LF (Canadian Maple Leaf) and GBXSPOT data, plus educational content about premiums
 - **Coin Specs Page**: Technical specifications, purity details, IRA eligibility, and premium drivers with FAQ
-- **Design & History Page**: James Earle Fraser's design origins, obverse/reverse themes, and cultural backdrop
+- **Design & History Page**: The iconic Maple Leaf design, Royal Canadian Mint heritage, and cultural significance
 - **Resources**: 12 in-depth educational articles covering:
-  - Understanding Gold Buffalo Premiums
-  - Coin Comparison (Buffalo vs Eagle vs Maple Leaf)
+  - Understanding Gold Maple Leaf Premiums
+  - Coin Comparison (Maple Leaf vs Eagle vs Buffalo)
   - Storage Options for Gold Coins
-  - Mint & Design Differences
+  - Purity Advantages (.9999 fine gold)
   - Liquidity Considerations
   - Market Dynamics
   - Bid-Ask Spreads
   - Authentication Guide
-  - Institutional vs Retail Markets
+  - IRA Eligibility
   - Portfolio Allocation
   - First-Time Buyer's Guide
   - Tax Considerations
@@ -71,8 +71,8 @@ src/
 ├── components/
 │   ├── Header.tsx
 │   ├── Footer.tsx
-│   ├── LiveGoldSpotCard.tsx        # American Buffalo price card
-│   ├── LiveGoldSpotIndexCard.tsx  # Gold spot index card
+│   ├── LiveGoldSpotCard.tsx        # Canadian Gold Maple Leaf price card
+│   ├── LiveGoldSpotIndexCard.tsx   # Gold spot index card
 │   └── MonexWidgets.tsx
 ├── lib/
 │   ├── siteConfig.ts       # ⭐ SINGLE SOURCE OF TRUTH
@@ -87,11 +87,11 @@ src/
 
 This site uses the Monex API for pricing data:
 
-- **Product Symbol**: AB (American Gold Buffalo)
+- **Product Symbol**: LF (Canadian Gold Maple Leaf)
 - **Spot Symbol**: GBXSPOT (Gold spot index)
 
 API endpoints:
-- `https://api.monex.com/api/v2/Metals/spot/summary?metals=AB`
+- `https://api.monex.com/api/v2/Metals/spot/summary?metals=LF`
 - `https://api.monex.com/api/v2/Metals/spot/summary?metals=GBXSPOT`
 
 Prices are fetched once per page load (no polling/intervals).

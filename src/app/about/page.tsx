@@ -3,24 +3,24 @@ import Link from "next/link";
 import { SITE_CONFIG } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "About American Gold Eagle Coins | Independent Educational Resource",
+  title: "About Canadian Gold Maple Leaf Coins | Independent Educational Resource",
   description:
-    "AmericanEagleGoldCoin.com is an independent educational resource about American Gold Eagle coins. We do not sell precious metals, provide financial advice, or endorse any dealers.",
+    "CanadianMapleLeafGoldCoins.com is an independent educational resource about Canadian Gold Maple Leaf coins. We do not sell precious metals, provide financial advice, or endorse any dealers.",
   alternates: {
     canonical: `${SITE_CONFIG.canonicalDomain}/about`,
   },
   openGraph: {
-    title: "About American Gold Eagle Coins | Independent Educational Resource",
+    title: "About Canadian Gold Maple Leaf Coins | Independent Educational Resource",
     description:
-      "Independent educational resource about American Gold Eagle coins. We do not sell precious metals or provide financial advice.",
+      "Independent educational resource about Canadian Gold Maple Leaf coins. We do not sell precious metals or provide financial advice.",
     url: `${SITE_CONFIG.domain}/about`,
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "About American Gold Eagle Coins | Independent Educational Resource",
+    title: "About Canadian Gold Maple Leaf Coins | Independent Educational Resource",
     description:
-      "Independent educational resource about American Gold Eagle coins. We do not sell precious metals or provide financial advice.",
+      "Independent educational resource about Canadian Gold Maple Leaf coins. We do not sell precious metals or provide financial advice.",
   },
 };
 
@@ -28,9 +28,9 @@ export default function AboutPage() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    name: "About American Gold Eagle Coins",
+    name: "About Canadian Gold Maple Leaf Coins",
     description:
-      "Learn about AmericanEagleGoldCoin.com, an independent educational resource about American Gold Eagle coins.",
+      "Learn about CanadianMapleLeafGoldCoins.com, an independent educational resource about Canadian Gold Maple Leaf coins.",
     url: `${SITE_CONFIG.domain}/about`,
     publisher: {
       "@type": "Organization",
@@ -68,13 +68,13 @@ export default function AboutPage() {
               <p className="text-gray-300 leading-relaxed mb-4">
                 {SITE_CONFIG.brandName} is an independent educational website
                 dedicated to helping investors understand{" "}
-                {SITE_CONFIG.primaryProduct}, America&apos;s most popular gold 
-                bullion coin with proven durability and exceptional liquidity.
+                {SITE_CONFIG.primaryProduct}, one of the world&apos;s most 
+                recognized pure gold bullion coins with exceptional purity and global liquidity.
               </p>
               <p className="text-gray-300 leading-relaxed">
                 Our mission is to provide clear, unbiased information about 
-                Gold Eagle investing, including pricing mechanics, the durability 
-                advantages of 22-karat gold, IRA eligibility, and how the Eagle compares 
+                Gold Maple Leaf investing, including pricing mechanics, the purity 
+                advantages of .9999 fine gold, IRA eligibility, and how the Maple Leaf compares 
                 to other gold bullion coins.
               </p>
             </section>
@@ -97,7 +97,7 @@ export default function AboutPage() {
                   <span className="text-red-400 mt-1">✕</span>
                   <span>
                     <strong className="text-white">Not affiliated:</strong> We
-                    have no financial relationship with Monex, the U.S. Mint, or 
+                    have no financial relationship with Monex, the Royal Canadian Mint, or 
                     any of the dealers mentioned on our site.
                   </span>
                 </li>
@@ -136,8 +136,8 @@ export default function AboutPage() {
                 <li className="flex items-start gap-3">
                   <span className="text-bullion-gold">•</span>
                   <span>
-                    <strong className="text-white">American Gold Eagle price</strong> (current
-                    ask price for 1 oz Gold Eagle coins)
+                    <strong className="text-white">Canadian Gold Maple Leaf price</strong> (current
+                    ask price for 1 oz Gold Maple Leaf coins)
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
@@ -197,19 +197,19 @@ export default function AboutPage() {
               </ul>
             </section>
 
-            {/* About the Gold Eagle */}
+            {/* About the Gold Maple Leaf */}
             <section className="card p-6 md:p-8 bg-bullion-gold/5 border-bullion-gold/30">
               <h2 className="text-2xl font-display font-semibold text-white mb-4">
-                About the American Gold Eagle
+                About the Canadian Gold Maple Leaf
               </h2>
               <p className="text-gray-300 leading-relaxed mb-4">
-                The American Gold Eagle was first minted in 1986 as the U.S. 
-                Mint&apos;s flagship gold bullion coin. Key features:
+                The Canadian Gold Maple Leaf was first minted in 1979 by the Royal 
+                Canadian Mint. Key features:
               </p>
               <ul className="space-y-2 text-gray-300">
                 <li className="flex items-start gap-3">
                   <span className="text-bullion-gold">•</span>
-                  <span><strong className="text-white">.9167 fine gold</strong> (22-karat purity)</span>
+                  <span><strong className="text-white">.9999 fine gold</strong> (24-karat purity)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-bullion-gold">•</span>
@@ -217,7 +217,7 @@ export default function AboutPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-bullion-gold">•</span>
-                  <span><strong className="text-white">$50 face value</strong> U.S. legal tender</span>
+                  <span><strong className="text-white">$50 CAD face value</strong> Canadian legal tender</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-bullion-gold">•</span>
@@ -225,7 +225,7 @@ export default function AboutPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-bullion-gold">•</span>
-                  <span><strong className="text-white">Augustus Saint-Gaudens design</strong> from the 1907 $20 gold piece</span>
+                  <span><strong className="text-white">Iconic maple leaf design</strong> by Walter Ott</span>
                 </li>
               </ul>
             </section>

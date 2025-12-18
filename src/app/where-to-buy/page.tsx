@@ -3,24 +3,24 @@ import Link from "next/link";
 import { SITE_CONFIG } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Where to Buy American Gold Eagle Coins | Independent Dealer Guide",
+  title: "Where to Buy Canadian Gold Maple Leaf Coins | Independent Dealer Guide",
   description:
-    "Independent guide to buying American Gold Eagle coins from online dealers, local coin shops, the U.S. Mint, and authorized distributors. No endorsements. Educational information only.",
+    "Independent guide to buying Canadian Gold Maple Leaf coins from online dealers, local coin shops, and authorized distributors. No endorsements. Educational information only.",
   alternates: {
     canonical: `${SITE_CONFIG.canonicalDomain}/where-to-buy`,
   },
   openGraph: {
-    title: "Where to Buy American Gold Eagle Coins | Independent Dealer Guide",
+    title: "Where to Buy Canadian Gold Maple Leaf Coins | Independent Dealer Guide",
     description:
-      "Independent guide to buying American Gold Eagle coins from online dealers, local coin shops, and authorized sources. Educational information only.",
+      "Independent guide to buying Canadian Gold Maple Leaf coins from online dealers, local coin shops, and authorized sources. Educational information only.",
     url: `${SITE_CONFIG.domain}/where-to-buy`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Where to Buy American Gold Eagle Coins | Independent Dealer Guide",
+    title: "Where to Buy Canadian Gold Maple Leaf Coins | Independent Dealer Guide",
     description:
-      "Independent guide to buying American Gold Eagle coins from online dealers, local coin shops, and authorized sources.",
+      "Independent guide to buying Canadian Gold Maple Leaf coins from online dealers, local coin shops, and authorized sources.",
   },
 };
 
@@ -29,55 +29,55 @@ const onlineDealers = [
   {
     name: "Monex",
     description:
-      "A precious metals dealer providing live market data and American Gold Eagle coins alongside other gold products.",
-    url: "https://www.monex.com/american-eagle-gold-coins-for-sale/",
+      "A precious metals dealer providing live market data and Canadian Gold Maple Leaf coins alongside other gold products.",
+    url: "https://www.monex.com/gold-canadian-maple-leaf-coins/",
   },
   {
     name: "JM Bullion",
     description:
-      "An established online precious metals dealer offering American Gold Eagle coins, Gold Buffalos, and other government-minted bullion.",
+      "An established online precious metals dealer offering Canadian Gold Maple Leaf coins, Gold Eagles, and other government-minted bullion.",
     url: "https://www.jmbullion.com/",
   },
   {
     name: "APMEX",
     description:
-      "One of the largest online bullion retailers with a wide selection of American Gold Eagle coins in various conditions.",
+      "One of the largest online bullion retailers with a wide selection of Canadian Gold Maple Leaf coins in various conditions.",
     url: "https://www.apmex.com/",
   },
   {
     name: "SD Bullion",
     description:
-      "An online dealer known for competitive pricing on Gold Eagle coins and other U.S. Mint bullion products.",
+      "An online dealer known for competitive pricing on Gold Maple Leaf coins and other government-minted bullion products.",
     url: "https://sdbullion.com/",
   },
   {
     name: "Goldline",
     description:
-      "A precious metals dealer offering Gold Eagle coins with personalized service and market insights.",
+      "A precious metals dealer offering Gold Maple Leaf coins with personalized service and market insights.",
     url: "https://www.goldline.com/",
   },
   {
     name: "GovMint",
     description:
-      "A collectible coins and precious metals dealer specializing in government-issued bullion including Gold Eagle coins.",
+      "A collectible coins and precious metals dealer specializing in government-issued bullion including Gold Maple Leaf coins.",
     url: "https://www.govmint.com/",
   },
   {
     name: "Bullion Exchanges",
     description:
-      "A New York-based bullion dealer offering American Gold Eagle coins with multiple payment options.",
+      "A New York-based bullion dealer offering Canadian Gold Maple Leaf coins with multiple payment options.",
     url: "https://bullionexchanges.com/",
   },
   {
     name: "Provident Metals",
     description:
-      "An online bullion dealer offering competitive prices on Gold Eagle coins and other government bullion.",
+      "An online bullion dealer offering competitive prices on Gold Maple Leaf coins and other government bullion.",
     url: "https://www.providentmetals.com/",
   },
   {
     name: "Money Metals Exchange",
     description:
-      "A precious metals dealer offering Gold Eagle coins with price transparency and educational content.",
+      "A precious metals dealer offering Gold Maple Leaf coins with price transparency and educational content.",
     url: "https://www.moneymetals.com/",
   },
 ];
@@ -86,9 +86,9 @@ export default function WhereToBuyPage() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Where to Buy American Gold Eagle Coins | Independent Buying Guide",
+    name: "Where to Buy Canadian Gold Maple Leaf Coins | Independent Buying Guide",
     description:
-      "Learn where to buy American Gold Eagle coins online and locally, including major dealers, local coin shops, and authorized distributors.",
+      "Learn where to buy Canadian Gold Maple Leaf coins online and locally, including major dealers, local coin shops, and authorized distributors.",
     url: `${SITE_CONFIG.domain}/where-to-buy`,
     publisher: {
       "@type": "Organization",
@@ -100,9 +100,9 @@ export default function WhereToBuyPage() {
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Where to buy American Gold Eagle coins",
+    name: "Where to buy Canadian Gold Maple Leaf coins",
     description:
-      "Types of vendors and platforms for purchasing American Gold Eagle coins",
+      "Types of vendors and platforms for purchasing Canadian Gold Maple Leaf coins",
     itemListElement: [
       {
         "@type": "ListItem",
@@ -112,7 +112,7 @@ export default function WhereToBuyPage() {
       {
         "@type": "ListItem",
         position: 2,
-        name: "U.S. Mint Authorized Purchasers",
+        name: "Royal Canadian Mint Distributors",
       },
       {
         "@type": "ListItem",
@@ -145,11 +145,11 @@ export default function WhereToBuyPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
               <span className="gold-text">Where to Buy</span>
               <br />
-              <span className="text-white">American Gold Eagle Coins</span>
+              <span className="text-white">Canadian Gold Maple Leaf Coins</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-6">
               An independent educational guide to understanding your options
-              for purchasing American Gold Eagle coins from various authorized sources.
+              for purchasing Canadian Gold Maple Leaf coins from various authorized sources.
             </p>
             <div className="bg-bullion-gold/5 border border-bullion-gold/20 rounded-xl p-6 max-w-2xl mx-auto">
               <p className="text-gray-400 text-sm">
@@ -180,7 +180,7 @@ export default function WhereToBuyPage() {
                 <p className="text-gray-400 text-sm">
                   Research dealer history, customer reviews, and industry
                   accreditations. Look for established businesses with
-                  transparent track records and U.S. Mint authorized status.
+                  transparent track records.
                 </p>
               </div>
               <div className="card p-6">
@@ -192,7 +192,7 @@ export default function WhereToBuyPage() {
                 </h3>
                 <p className="text-gray-400 text-sm">
                   Compare premiums over spot price across multiple dealers.
-                  Gold Eagle coins typically carry 3-5% premiums over spot
+                  Gold Maple Leaf coins typically carry 2-4% premiums over spot
                   for standard bullion coins.
                 </p>
               </div>
@@ -205,7 +205,7 @@ export default function WhereToBuyPage() {
                 </h3>
                 <p className="text-gray-400 text-sm">
                   Understand shipping costs, delivery times, and insurance
-                  coverage. For Gold Eagle coins, fully insured and discreet
+                  coverage. For Gold Maple Leaf coins, fully insured and discreet
                   shipping is essential for protection.
                 </p>
               </div>
@@ -217,7 +217,7 @@ export default function WhereToBuyPage() {
                   Buyback Policies
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  Check whether the dealer offers buyback programs. Gold Eagle
+                  Check whether the dealer offers buyback programs. Gold Maple Leaf
                   coins have excellent liquidity, and reputable dealers maintain
                   competitive buyback prices.
                 </p>
@@ -230,7 +230,7 @@ export default function WhereToBuyPage() {
                   Authenticity Guarantee
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  Ensure dealers guarantee authenticity. Gold Eagle coins from
+                  Ensure dealers guarantee authenticity. Gold Maple Leaf coins from
                   reputable dealers should come with verification and return
                   policies if authenticity concerns arise.
                 </p>
@@ -251,41 +251,41 @@ export default function WhereToBuyPage() {
             </div>
           </section>
 
-          {/* U.S. Mint & Authorized Purchasers */}
+          {/* Royal Canadian Mint & Distributors */}
           <section>
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              <span className="gold-text">U.S. Mint</span> & Authorized Sources
+              <span className="gold-text">Royal Canadian Mint</span> & Distributors
             </h2>
             <div className="card p-8 max-w-3xl mx-auto">
               <p className="text-gray-300 mb-6">
-                The American Gold Eagle is minted exclusively by the U.S. Mint. 
-                While the Mint sells directly to the public for proof coins, 
-                bullion coins are distributed through Authorized Purchasers.
+                The Canadian Gold Maple Leaf is minted exclusively by the Royal Canadian Mint. 
+                While the Mint sells directly to the public for some products, 
+                bullion coins are primarily distributed through authorized dealers.
               </p>
               <div className="bg-bullion-gold/5 border border-bullion-gold/20 rounded-lg p-4 mb-6">
                 <h3 className="text-lg font-semibold text-white mb-2">
                   Understanding the Distribution Chain
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  The U.S. Mint sells bullion Gold Eagle coins to a network of 
-                  <strong className="text-white"> Authorized Purchasers</strong>, large 
-                  dealers who meet Mint requirements. These Authorized Purchasers 
+                  The Royal Canadian Mint sells bullion Gold Maple Leaf coins to a network of 
+                  <strong className="text-white"> authorized distributors</strong>, large 
+                  dealers who meet Mint requirements. These distributors 
                   then sell to smaller dealers and the public. This is why you 
-                  purchase from dealers rather than directly from the Mint.
+                  typically purchase from dealers rather than directly from the Mint.
                 </p>
               </div>
               <div className="space-y-3">
                 <span className="text-gray-300">
                   Visit{" "}
                   <a
-                    href="https://www.usmint.gov/"
+                    href="https://www.mint.ca/"
                     target="_blank"
                     rel="nofollow noopener noreferrer"
                     className="text-bullion-gold hover:underline"
                   >
-                    usmint.gov
+                    mint.ca
                   </a>{" "}
-                  for official American Eagle program information.
+                  for official Gold Maple Leaf program information.
                 </span>
               </div>
             </div>
@@ -297,7 +297,7 @@ export default function WhereToBuyPage() {
               <span className="gold-text">Online</span> Bullion Dealers
             </h2>
             <p className="text-gray-400 text-center mb-8 max-w-2xl mx-auto">
-              Major online dealers offer competitive pricing on American Gold Eagle 
+              Major online dealers offer competitive pricing on Canadian Gold Maple Leaf 
               coins with convenient shipping. We encourage you to compare prices
               across multiple sources before purchasing.
             </p>
@@ -346,15 +346,15 @@ export default function WhereToBuyPage() {
             </h2>
             <div className="card p-8 max-w-3xl mx-auto">
               <p className="text-gray-300 mb-6">
-                Local coin shops and bullion dealers commonly stock American Gold 
-                Eagle coins, offering convenient face-to-face transactions:
+                Local coin shops and bullion dealers commonly stock Canadian Gold 
+                Maple Leaf coins, offering convenient face-to-face transactions:
               </p>
               <ul className="space-y-4 mb-6">
                 <li className="flex items-start gap-3">
                   <span className="text-bullion-gold mt-1">•</span>
                   <span className="text-gray-400">
                     <strong className="text-white">Immediate possession:</strong>{" "}
-                    Walk out with your Gold Eagle the same day, no shipping delays.
+                    Walk out with your Gold Maple Leaf the same day, no shipping delays.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
@@ -384,7 +384,7 @@ export default function WhereToBuyPage() {
                 <p className="text-gray-500 text-sm">
                   <strong className="text-gray-400">Finding local dealers:</strong>{" "}
                   Search for &ldquo;coin shop near me&rdquo; or &ldquo;gold dealer&rdquo;
-                  in your area. Call ahead to confirm Gold Eagle availability and pricing.
+                  in your area. Call ahead to confirm Gold Maple Leaf availability and pricing.
                 </p>
               </div>
             </div>
@@ -398,16 +398,16 @@ export default function WhereToBuyPage() {
             <div className="card p-8 max-w-3xl mx-auto">
               <p className="text-gray-300 mb-6">
                 For IRA purchases, you&apos;ll work with a specialized custodian 
-                who handles the regulatory requirements. American Gold Eagle 
-                coins are specifically approved by the IRS for Precious Metals IRAs.
+                who handles the regulatory requirements. Canadian Gold Maple Leaf 
+                coins meet IRS requirements for Precious Metals IRAs.
               </p>
               <div className="bg-bullion-gold/5 border border-bullion-gold/20 rounded-lg p-4 mb-6">
                 <h3 className="text-lg font-semibold text-white mb-2">
                   IRA Eligibility Requirements
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  The American Gold Eagle is specifically named in IRS code as an 
-                  approved asset for Precious Metals IRAs. Coins must be held by an 
+                  The Canadian Gold Maple Leaf&apos;s .9999 purity exceeds the IRS minimum 
+                  .995 fineness requirement for Precious Metals IRAs. Coins must be held by an 
                   approved custodian in an approved depository.
                 </p>
               </div>
@@ -458,12 +458,12 @@ export default function WhereToBuyPage() {
               <ul className="space-y-3">
                 <li>
                   <a
-                    href="https://www.monex.com/gold-american-eagle-price-charts/"
+                    href="https://www.monex.com/gold-canadian-maple-leaf-coins/"
                     target="_blank"
                     rel="nofollow noopener noreferrer"
                     className="inline-flex items-center text-bullion-gold hover:text-bullion-goldLight transition-colors"
                   >
-                    <span>Monex Gold Eagle price charts</span>
+                    <span>Monex Gold Maple Leaf pricing</span>
                     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
@@ -471,12 +471,12 @@ export default function WhereToBuyPage() {
                 </li>
                 <li>
                   <a
-                    href="https://www.monex.com/knowledge/are-american-eagle-gold-coins-good-investments/"
+                    href="https://www.monex.com/gold-prices/"
                     target="_blank"
                     rel="nofollow noopener noreferrer"
                     className="inline-flex items-center text-bullion-gold hover:text-bullion-goldLight transition-colors"
                   >
-                    <span>Monex Gold Eagle investment guide</span>
+                    <span>Monex live gold spot prices</span>
                     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>

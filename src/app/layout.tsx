@@ -7,23 +7,24 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.canonicalDomain),
   title: {
-    default: `${SITE_CONFIG.brandName} | America's Most Popular Gold Bullion Coin`,
+    default: `${SITE_CONFIG.brandName} | .9999 Pure Gold from the Royal Canadian Mint`,
     template: `%s | ${SITE_CONFIG.brandName}`,
   },
   description:
-    "Discover everything about American Gold Eagle coins, America's most popular gold bullion coin. 22-karat, .9167 fine gold, U.S. Mint legal tender. Expert insights on pricing, premiums, and investing.",
+    "Discover everything about Canadian Gold Maple Leaf coins from the Royal Canadian Mint. .9999 fine gold (24-karat), globally recognized, and highly liquid. Expert insights on pricing, premiums, and investing.",
   keywords: [
-    "American Gold Eagle",
-    "Gold Eagle coin",
+    "Canadian Gold Maple Leaf",
+    "Gold Maple Leaf coin",
     "1 oz gold coin",
-    "22 karat gold coin",
-    ".9167 fine gold",
-    "US Mint gold coin",
+    "24 karat gold coin",
+    ".9999 fine gold",
+    "Royal Canadian Mint gold coin",
     "gold bullion coin",
-    "buy Gold Eagle",
+    "buy Gold Maple Leaf",
     "gold coin prices",
     "gold coin investment",
     "IRA eligible gold",
+    "pure gold coin",
   ],
   authors: [{ name: SITE_CONFIG.brandName }],
   creator: SITE_CONFIG.brandName,
@@ -33,23 +34,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_CONFIG.domain,
     siteName: SITE_CONFIG.brandName,
-    title: `${SITE_CONFIG.brandName} | America's Most Popular Gold Bullion Coin`,
+    title: `${SITE_CONFIG.brandName} | .9999 Pure Gold from the Royal Canadian Mint`,
     description:
-      "Discover everything about American Gold Eagle coins, America's most popular gold bullion coin. 22-karat, .9167 fine gold, U.S. Mint legal tender.",
+      "Discover everything about Canadian Gold Maple Leaf coins from the Royal Canadian Mint. .9999 fine gold (24-karat), globally recognized, and highly liquid.",
     images: [
       {
         url: `${SITE_CONFIG.domain}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "American Gold Eagle Coin - Investment Education",
+        alt: "Canadian Gold Maple Leaf Coin - Investment Education",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_CONFIG.brandName} | America's Most Popular Gold Bullion Coin`,
+    title: `${SITE_CONFIG.brandName} | .9999 Pure Gold from the Royal Canadian Mint`,
     description:
-      "Discover everything about American Gold Eagle coins, America's most popular gold bullion coin. 22-karat, .9167 fine gold, U.S. Mint legal tender.",
+      "Discover everything about Canadian Gold Maple Leaf coins from the Royal Canadian Mint. .9999 fine gold (24-karat), globally recognized, and highly liquid.",
   },
   robots: {
     index: true,

@@ -1,21 +1,21 @@
 /**
  * SITE CONFIGURATION - Single Source of Truth
  * 
- * Configuration for AmericanEagleGoldCoin.com
+ * Configuration for CanadianMapleLeafGoldCoins.com
  * 
  * ═══════════════════════════════════════════════════════════════════════════
  * GUARDRAILS - Do Not Modify Without Intentional Review
  * ═══════════════════════════════════════════════════════════════════════════
  * 
  * PROTECTED ELEMENTS:
- * - Pricing symbols (GBXSPOT vs AE)
+ * - Pricing symbols (GBXSPOT vs product symbol)
  * - Monex API endpoints
  * - Monex chart embed script
  * - Navigation IA
  * 
  * PRICING RULES:
  * - GBXSPOT: live gold spot price per troy ounce (market reference ONLY)
- * - AE: American Eagle Gold Coin product pricing (product cards + charts ONLY)
+ * - Product symbol: Canadian Maple Leaf Gold Coin product pricing (product cards + charts ONLY)
  * - Do NOT interchange these symbols
  * 
  * DEPLOYMENT:
@@ -24,9 +24,9 @@
  * - Vercel auto-deploys from main only
  * 
  * CONTENT:
- * - This site is strictly about American Gold Eagle coins
- * - Focus on: minting, legal tender status, purity (.9167 fine / 22-karat), premiums, 
- *   liquidity, IRA eligibility, obverse/reverse designs
+ * - This site is strictly about Canadian Gold Maple Leaf coins
+ * - Focus on: Royal Canadian Mint, legal tender status, purity (.9999 fine / 24-karat), premiums, 
+ *   liquidity, IRA eligibility, obverse/reverse designs, global recognition
  * 
  * ═══════════════════════════════════════════════════════════════════════════
  */
@@ -37,20 +37,20 @@ export const SITE_CONFIG = {
   // ============================================================
   
   /** Primary domain with https:// prefix */
-  domain: "https://www.americaneaglegoldcoin.com",
+  domain: "https://www.canadianmapleleafgoldcoins.com",
   
   /** Canonical domain (usually same as domain) */
-  canonicalDomain: "https://www.americaneaglegoldcoin.com",
+  canonicalDomain: "https://www.canadianmapleleafgoldcoins.com",
   
   /** Brand name displayed in UI and metadata */
-  brandName: "American Eagle Gold Coin",
+  brandName: "Canadian Maple Leaf Gold Coins",
 
   // ============================================================
   // PRODUCT DEFINITION
   // ============================================================
   
   /** Primary product name */
-  primaryProduct: "American Gold Eagle coins",
+  primaryProduct: "Canadian Gold Maple Leaf coins",
   
   /** Metal type: "gold" | "silver" | "platinum" | "palladium" */
   metal: "gold",
@@ -70,9 +70,9 @@ export const SITE_CONFIG = {
   
   /** 
    * Product price symbol for Monex API
-   * AE = American Eagle Gold Coin (product cards + charts ONLY)
+   * LF = Canadian Maple Leaf Gold Coin (product cards + charts ONLY)
    */
-  productSymbol: "AE",
+  productSymbol: "LF",
   
   /**
    * Spot index symbol for Monex API (raw metal spot price)
@@ -86,20 +86,14 @@ export const SITE_CONFIG = {
   
   /** Target audience description */
   angle:
-    "investors seeking U.S. Mint legal tender gold bullion with proven durability and strong liquidity",
+    "investors seeking .9999 pure gold bullion from the Royal Canadian Mint with global recognition and strong liquidity",
 
   /** Array of relevant Monex.com links for citations */
   monexLinks: [
-    "https://www.monex.com/american-eagle-gold-coins-for-sale/",
-    "https://www.monex.com/gold-american-eagle-price-charts/",
+    "https://www.monex.com/gold-canadian-maple-leaf-coins/",
     "https://www.monex.com/gold-prices/",
     "https://www.monex.com/investing-in-gold/",
-    "https://www.monex.com/knowledge-base/gold-investing/gold-coins/gold-american-eagles/",
-    "https://www.monex.com/knowledge/american-eagles-historic-rise-to-gold-standard/",
-    "https://www.monex.com/knowledge/history-behind-american-eagle-gold-coin-design/",
-    "https://www.monex.com/knowledge/are-american-eagle-gold-coins-good-investments/",
-    "https://www.monex.com/knowledge/american-eagle-gold-coins-value-wealth-diversification/",
-    "https://www.monex.com/knowledge/investing-in-american-eagle-gold-coins-trends-insights/",
+    "https://www.monex.com/knowledge-base/gold-investing/gold-coins/",
   ],
 } as const;
 

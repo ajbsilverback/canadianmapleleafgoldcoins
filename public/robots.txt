@@ -1,6 +1,6 @@
-# https://www.americaneaglegoldcoin.com robots.txt
+# https://www.canadianmapleleafgoldcoins.com robots.txt
 
 User-agent: *
 Allow: /
 
-Sitemap: https://www.americaneaglegoldcoin.com/sitemap.xml
+Sitemap: https://www.canadianmapleleafgoldcoins.com/sitemap.xml

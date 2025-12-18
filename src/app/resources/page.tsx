@@ -7,24 +7,24 @@ import { resourcesQA } from "@/data/qa-content";
 import { fetchProductSpot } from "@/lib/monexSpot";
 
 export const metadata: Metadata = {
-  title: "American Gold Eagle Educational Resources & Investment Guides",
+  title: "Canadian Gold Maple Leaf Educational Resources & Investment Guides",
   description:
-    "In-depth educational guides on American Gold Eagle coins covering premiums, coin comparisons, storage options, IRA eligibility, market dynamics, and portfolio allocation strategies.",
+    "In-depth educational guides on Canadian Gold Maple Leaf coins covering premiums, coin comparisons, storage options, IRA eligibility, market dynamics, and portfolio allocation strategies.",
   alternates: {
     canonical: `${SITE_CONFIG.canonicalDomain}/resources`,
   },
   openGraph: {
-    title: "American Gold Eagle Educational Resources & Investment Guides",
+    title: "Canadian Gold Maple Leaf Educational Resources & Investment Guides",
     description:
-      "In-depth educational guides on American Gold Eagle coins covering premiums, storage, coin comparisons, and portfolio strategies.",
+      "In-depth educational guides on Canadian Gold Maple Leaf coins covering premiums, storage, coin comparisons, and portfolio strategies.",
     url: `${SITE_CONFIG.domain}/resources`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "American Gold Eagle Educational Resources & Investment Guides",
+    title: "Canadian Gold Maple Leaf Educational Resources & Investment Guides",
     description:
-      "In-depth educational guides on Gold Eagle coins covering premiums, storage, and investment strategies.",
+      "In-depth educational guides on Gold Maple Leaf coins covering premiums, storage, and investment strategies.",
   },
 };
 
@@ -52,9 +52,9 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "American Gold Eagle Resources & Educational Guides",
+    name: "Canadian Gold Maple Leaf Resources & Educational Guides",
     description:
-      "Comprehensive educational resources about American Gold Eagle coins covering premiums, comparisons, storage, and investment strategies.",
+      "Comprehensive educational resources about Canadian Gold Maple Leaf coins covering premiums, comparisons, storage, and investment strategies.",
     url: `${SITE_CONFIG.domain}/resources`,
     publisher: {
       "@type": "Organization",
@@ -132,7 +132,7 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
             </h1>
 
             <p className="text-xl text-gray-300 leading-relaxed mt-6">
-              Deepen your understanding of American Gold Eagle coins and the 
+              Deepen your understanding of Canadian Gold Maple Leaf coins and the 
               broader gold market with our comprehensive guides. Whether you&apos;re 
               comparing coins, understanding premiums, or planning storage, our 
               resources provide the insights you need. Check{" "}
@@ -145,7 +145,7 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
               </Link>
               , or return to our{" "}
               <Link href="/" className="text-bullion-gold hover:underline">
-                Gold Eagle overview
+                Gold Maple Leaf overview
               </Link>.
             </p>
           </div>
@@ -272,7 +272,7 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
           <p className="text-gray-400 mb-6">
             View live{" "}
             <Link href="/live-gold-prices" className="text-bullion-gold hover:underline">
-              Gold Eagle pricing and market data
+              Gold Maple Leaf pricing and market data
             </Link>{" "}
             to inform your investment decisions.
           </p>

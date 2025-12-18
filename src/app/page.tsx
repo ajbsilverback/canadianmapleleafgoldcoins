@@ -8,24 +8,24 @@ import { homeQA } from "@/data/qa-content";
 import { fetchProductSpot, formatUSD } from "@/lib/monexSpot";
 
 export const metadata: Metadata = {
-  title: "American Gold Eagle | Expert Guide to America's Most Popular Gold Coin",
+  title: "Canadian Gold Maple Leaf | Expert Guide to .9999 Pure Gold Coins",
   description:
-    "Comprehensive guide to American Gold Eagle coins, America's most popular gold bullion coin. 22-karat, .9167 fine gold, U.S. Mint legal tender. Learn about pricing, premiums, IRA eligibility, and investing.",
+    "Comprehensive guide to Canadian Gold Maple Leaf coins from the Royal Canadian Mint. 24-karat, .9999 fine gold with global recognition. Learn about pricing, premiums, IRA eligibility, and investing.",
   alternates: {
     canonical: SITE_CONFIG.canonicalDomain,
   },
   openGraph: {
-    title: "American Gold Eagle | Expert Guide to America's Most Popular Gold Coin",
+    title: "Canadian Gold Maple Leaf | Expert Guide to .9999 Pure Gold Coins",
     description:
-      "Comprehensive guide to American Gold Eagle coins. 22-karat, .9167 fine gold, U.S. Mint legal tender bullion.",
+      "Comprehensive guide to Canadian Gold Maple Leaf coins. 24-karat, .9999 fine gold from the Royal Canadian Mint.",
     url: SITE_CONFIG.domain,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "American Gold Eagle | Expert Guide to America's Most Popular Gold Coin",
+    title: "Canadian Gold Maple Leaf | Expert Guide to .9999 Pure Gold Coins",
     description:
-      "Comprehensive guide to American Gold Eagle coins. 22-karat, .9167 fine gold, U.S. Mint legal tender.",
+      "Comprehensive guide to Canadian Gold Maple Leaf coins. 24-karat, .9999 fine gold from the Royal Canadian Mint.",
   },
 };
 
@@ -50,9 +50,9 @@ export default async function HomePage() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: `${SITE_CONFIG.brandName} - Your Guide to American Gold Eagle Coins`,
+    name: `${SITE_CONFIG.brandName} - Your Guide to Canadian Gold Maple Leaf Coins`,
     description:
-      "Comprehensive educational resource about American Gold Eagle coins, America's most popular gold bullion coin with 22-karat, .9167 fine purity.",
+      "Comprehensive educational resource about Canadian Gold Maple Leaf coins, one of the world's most recognized pure gold bullion coins with 24-karat, .9999 fine purity.",
     url: SITE_CONFIG.domain,
     publisher: {
       "@type": "Organization",
@@ -64,12 +64,12 @@ export default async function HomePage() {
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "American Gold Eagle Coin",
+    name: "Canadian Gold Maple Leaf Coin",
     description:
-      "One troy ounce 22-karat gold bullion coin, .9167 fine purity, minted by the U.S. Mint and recognized as legal tender.",
+      "One troy ounce 24-karat gold bullion coin, .9999 fine purity, minted by the Royal Canadian Mint and recognized as Canadian legal tender.",
     brand: {
       "@type": "Brand",
-      name: "U.S. Mint",
+      name: "Royal Canadian Mint",
     },
     category: "Gold Coins",
     material: "Gold",
@@ -99,7 +99,7 @@ export default async function HomePage() {
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: "url('/american-gold-eagle-coin-hero.png')",
+              backgroundImage: "url('/gold-canadian-maple-leaf-hero.png')",
               backgroundPosition: "75% center",
             }}
           />
@@ -120,20 +120,20 @@ export default async function HomePage() {
           <div className="max-w-2xl">
             {/* Certificate line - typographic treatment */}
             <p className="text-[13px] text-gray-400 tracking-[0.2em] uppercase mb-6">
-              22-Karat&ensp;·&ensp;.9167 Fine Gold&ensp;·&ensp;U.S. Legal Tender
+              24-Karat&ensp;·&ensp;.9999 Fine Gold&ensp;·&ensp;Royal Canadian Mint
             </p>
 
             {/* Main Headline */}
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold leading-[0.95] mb-8 tracking-tight">
-              <span className="gold-text">American</span>
+              <span className="gold-text">Canadian</span>
               <br />
-              <span className="gold-text">Gold Eagle</span>
+              <span className="gold-text">Gold Maple Leaf</span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-xl md:text-2xl text-gray-300 leading-relaxed mb-10 max-w-xl">
-              America&apos;s most popular gold bullion coin since 1986. 
-              Minted by the U.S. Mint with proven durability and worldwide recognition.
+              One of the world&apos;s most recognized pure gold bullion coins since 1979. 
+              Minted by the Royal Canadian Mint with .9999 fine gold purity and global liquidity.
             </p>
 
             {/* CTAs */}
@@ -173,25 +173,25 @@ export default async function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4">
-              <span className="gold-text">Live Gold Eagle Pricing</span>
+              <span className="gold-text">Live Gold Maple Leaf Pricing</span>
             </h2>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-              Current market data for the 1 oz American Gold Eagle.
+              Current market data for the 1 oz Canadian Gold Maple Leaf.
             </p>
           </div>
           <LiveGoldSpotCard />
         </div>
       </section>
 
-      {/* Why American Gold Eagle Section */}
+      {/* Why Canadian Gold Maple Leaf Section */}
       <section className="py-16 md:py-24 section-dark">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4">
-              Why <span className="gold-text">American Gold Eagle</span>?
+              Why <span className="gold-text">Canadian Gold Maple Leaf</span>?
             </h2>
             <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
-              America&apos;s flagship gold bullion coin, backed by the U.S. government with proven durability and exceptional liquidity.
+              A globally recognized pure gold bullion coin from the Royal Canadian Mint with exceptional purity and strong liquidity.
             </p>
           </div>
 
@@ -213,10 +213,10 @@ export default async function HomePage() {
                 </svg>
               </div>
               <h3 className="text-2xl font-display font-semibold mb-4 text-white">
-                Proven Durability
+                .9999 Pure Gold
               </h3>
               <p className="text-gray-400 leading-relaxed">
-                The 22-karat (.9167 fine) gold alloy includes copper and silver for exceptional scratch resistance. Contains exactly 1 troy ounce of pure gold with added durability.
+                The Gold Maple Leaf contains .9999 fine gold (24-karat), making it one of the purest gold bullion coins available. Each 1 oz coin contains exactly 1 troy ounce of pure gold.
               </p>
             </div>
 
@@ -232,15 +232,15 @@ export default async function HomePage() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"
+                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
               </div>
               <h3 className="text-2xl font-display font-semibold mb-4 text-white">
-                U.S. Legal Tender
+                Global Recognition
               </h3>
               <p className="text-gray-400 leading-relaxed">
-                Produced by the U.S. Mint with a $50 face value. Weight and purity are guaranteed by the federal government, ensuring worldwide dealer recognition.
+                Produced by the Royal Canadian Mint since 1979, the Gold Maple Leaf is recognized and accepted by dealers worldwide. This strong reputation ensures excellent liquidity.
               </p>
             </div>
 
@@ -264,25 +264,25 @@ export default async function HomePage() {
                 IRA Eligible
               </h3>
               <p className="text-gray-400 leading-relaxed">
-                Specifically approved for Precious Metals IRAs under IRS rules. As U.S. Mint legal tender, the Gold Eagle meets all requirements for tax-advantaged retirement accounts.
+                Canadian Gold Maple Leaf coins meet IRS requirements for Precious Metals IRAs. Their .9999 purity exceeds minimum fineness standards, making them approved for tax-advantaged retirement accounts.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Who Buys Gold Eagle Section */}
+      {/* Who Buys Gold Maple Leaf Section */}
       <section className="py-16 md:py-24 relative overflow-hidden">
         <div className="absolute inset-0 gold-bar-pattern opacity-50" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-                Who Buys <span className="gold-text">Gold Eagle Coins</span>?
+                Who Buys <span className="gold-text">Gold Maple Leaf Coins</span>?
               </h2>
               <p className="text-lg md:text-xl text-gray-300 mb-8">
-                The American Gold Eagle appeals to investors who prioritize 
-                durability, government backing, and strong liquidity.
+                The Canadian Gold Maple Leaf appeals to investors who prioritize 
+                maximum purity, global recognition, and competitive premiums.
               </p>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
@@ -291,12 +291,11 @@ export default async function HomePage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-white mb-2">
-                      Long-Term Investors
+                      Purity-Focused Investors
                     </h3>
                     <p className="text-gray-400">
-                      Investors building generational wealth choose the Gold Eagle&apos;s 
-                      durable alloy for coins that handle well over decades. Each coin 
-                      contains exactly one troy ounce of pure gold.
+                      Investors seeking the highest gold purity choose the Gold Maple Leaf&apos;s 
+                      .9999 fine gold. Each coin contains exactly one troy ounce of pure 24-karat gold.
                     </p>
                   </div>
                 </div>
@@ -309,8 +308,8 @@ export default async function HomePage() {
                       IRA Investors
                     </h3>
                     <p className="text-gray-400">
-                      Those building Precious Metals IRAs value the Gold Eagle&apos;s 
-                      IRS-approved status, government guarantee, and strong 
+                      Those building Precious Metals IRAs value the Gold Maple Leaf&apos;s 
+                      IRS-approved status, government mint origin, and strong 
                       secondary market for eventual distributions.
                     </p>
                   </div>
@@ -321,11 +320,12 @@ export default async function HomePage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-white mb-2">
-                      Collectors & Investors
+                      Cost-Conscious Buyers
                     </h3>
                     <p className="text-gray-400">
-                      The Augustus Saint-Gaudens design, featuring Lady Liberty 
-                      and an eagle family, appeals to collectors and bullion investors alike.
+                      The Gold Maple Leaf often carries slightly lower premiums than 
+                      comparable U.S. coins, making it attractive for investors 
+                      focused on minimizing costs.
                     </p>
                   </div>
                 </div>
@@ -346,7 +346,7 @@ export default async function HomePage() {
               Comparing <span className="gold-text">Gold Bullion Coins</span>
             </h2>
             <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
-              Understanding how the American Gold Eagle compares to other 
+              Understanding how the Canadian Gold Maple Leaf compares to other 
               leading gold bullion coins helps you make informed decisions.
             </p>
           </div>
@@ -359,13 +359,13 @@ export default async function HomePage() {
                     Feature
                   </th>
                   <th className="text-center py-4 px-6 text-bullion-gold font-display">
+                    Maple Leaf
+                  </th>
+                  <th className="text-center py-4 px-6 text-gray-500 font-display">
                     Gold Eagle
                   </th>
                   <th className="text-center py-4 px-6 text-gray-500 font-display">
                     Gold Buffalo
-                  </th>
-                  <th className="text-center py-4 px-6 text-gray-500 font-display">
-                    Maple Leaf
                   </th>
                 </tr>
               </thead>
@@ -373,24 +373,24 @@ export default async function HomePage() {
                 <tr className="border-b border-gray-800">
                   <td className="py-4 px-6 font-medium">Gold Purity</td>
                   <td className="py-4 px-6 text-center text-bullion-gold">
-                    .9167 (22K)
+                    .9999 (24K)
                   </td>
-                  <td className="py-4 px-6 text-center">.9999 (24K)</td>
+                  <td className="py-4 px-6 text-center">.9167 (22K)</td>
                   <td className="py-4 px-6 text-center">.9999 (24K)</td>
                 </tr>
                 <tr className="border-b border-gray-800">
                   <td className="py-4 px-6 font-medium">Issuing Mint</td>
                   <td className="py-4 px-6 text-center text-bullion-gold">
-                    U.S. Mint
+                    Royal Canadian Mint
                   </td>
                   <td className="py-4 px-6 text-center">U.S. Mint</td>
-                  <td className="py-4 px-6 text-center">Royal Canadian</td>
+                  <td className="py-4 px-6 text-center">U.S. Mint</td>
                 </tr>
                 <tr className="border-b border-gray-800">
                   <td className="py-4 px-6 font-medium">Face Value</td>
-                  <td className="py-4 px-6 text-center text-bullion-gold">$50 USD</td>
+                  <td className="py-4 px-6 text-center text-bullion-gold">$50 CAD</td>
                   <td className="py-4 px-6 text-center">$50 USD</td>
-                  <td className="py-4 px-6 text-center">$50 CAD</td>
+                  <td className="py-4 px-6 text-center">$50 USD</td>
                 </tr>
                 <tr className="border-b border-gray-800">
                   <td className="py-4 px-6 font-medium">IRA Eligible</td>
@@ -400,17 +400,17 @@ export default async function HomePage() {
                 </tr>
                 <tr className="border-b border-gray-800">
                   <td className="py-4 px-6 font-medium">Typical Premium</td>
-                  <td className="py-4 px-6 text-center text-bullion-gold">3-5%</td>
+                  <td className="py-4 px-6 text-center text-bullion-gold">2-4%</td>
                   <td className="py-4 px-6 text-center">3-5%</td>
-                  <td className="py-4 px-6 text-center">2-4%</td>
+                  <td className="py-4 px-6 text-center">3-5%</td>
                 </tr>
                 <tr>
                   <td className="py-4 px-6 font-medium">Best For</td>
                   <td className="py-4 px-6 text-center text-bullion-gold">
-                    Durability + U.S. Legal Tender
+                    Maximum Purity + Low Premium
                   </td>
-                  <td className="py-4 px-6 text-center">Maximum Purity</td>
-                  <td className="py-4 px-6 text-center">Purity + Low Premium</td>
+                  <td className="py-4 px-6 text-center">Durability + U.S. Legal Tender</td>
+                  <td className="py-4 px-6 text-center">Maximum Purity + U.S. Mint</td>
                 </tr>
               </tbody>
             </table>
@@ -426,41 +426,39 @@ export default async function HomePage() {
               Iconic <span className="gold-text">Design & Heritage</span>
             </h2>
             <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
-              The American Gold Eagle features one of the most celebrated 
-              coin designs in U.S. history.
+              The Canadian Gold Maple Leaf features one of the most recognizable 
+              coin designs in the world.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="card">
               <h3 className="text-xl font-display font-semibold text-white mb-4">
-                Obverse: Lady Liberty
+                Obverse: Monarch Portrait
               </h3>
               <p className="text-gray-400 mb-4">
-                The obverse features Augustus Saint-Gaudens&apos; iconic Walking Liberty 
-                design from the 1907 $20 gold piece, widely considered one of the 
-                most beautiful American coin designs ever created.
+                The obverse features the reigning monarch of the United Kingdom and 
+                Commonwealth realms. Current coins display King Charles III, while 
+                coins from earlier years feature Queen Elizabeth II.
               </p>
               <p className="text-gray-500 text-sm">
-                <strong className="text-bullion-gold">Historical Note:</strong> President 
-                Theodore Roosevelt personally commissioned Saint-Gaudens to redesign 
-                American coinage in 1905.
+                <strong className="text-bullion-gold">Historical Note:</strong> The portrait 
+                design is updated periodically to reflect the current monarch.
               </p>
             </div>
 
             <div className="card">
               <h3 className="text-xl font-display font-semibold text-white mb-4">
-                Reverse: Eagle Family
+                Reverse: Maple Leaf
               </h3>
               <p className="text-gray-400 mb-4">
-                The reverse depicts a male eagle carrying an olive branch, 
-                flying above a nest containing a female eagle and hatchlings. 
-                This design by Miley Busiek symbolizes family, security, and strength.
+                The reverse displays a single sugar maple leaf, one of Canada&apos;s most 
+                enduring national symbols. This elegant design was created by Walter Ott 
+                and has remained essentially unchanged since the coin&apos;s 1979 debut.
               </p>
               <p className="text-gray-500 text-sm">
-                <strong className="text-bullion-gold">First Minted:</strong> The Gold Eagle 
-                debuted in 1986 as the flagship of the U.S. Mint&apos;s modern 
-                bullion program.
+                <strong className="text-bullion-gold">First Minted:</strong> The Gold Maple Leaf 
+                debuted in 1979 as one of the world&apos;s first .999 fine gold bullion coins.
               </p>
             </div>
           </div>

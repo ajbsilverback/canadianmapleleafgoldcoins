@@ -1,49 +1,49 @@
 import { NextResponse } from "next/server";
 
-const llmsTxt = `# AmericanEagleGoldCoin.com - LLMs.txt
+const llmsTxt = `# CanadianMapleLeafGoldCoins.com - LLMs.txt
 
-> An independent educational resource about American Gold Eagle coins
+> An independent educational resource about Canadian Gold Maple Leaf coins
 
 ## Site Overview
 
-AmericanEagleGoldCoin.com provides educational content about American Gold Eagle coins, America's most popular gold bullion coin minted by the U.S. Mint with .9167 fine purity (22-karat).
+CanadianMapleLeafGoldCoins.com provides educational content about Canadian Gold Maple Leaf coins, one of the world's most recognized pure gold bullion coins minted by the Royal Canadian Mint with .9999 fine purity (24-karat).
 
 ## What This Site Is
 
 - Independent educational resource
-- Information about American Gold Eagle coins
+- Information about Canadian Gold Maple Leaf coins
 - Live gold pricing data from Monex API
 - Educational articles about gold coin investing
 
 ## What This Site Is NOT
 
 - Not a dealer (we do not sell precious metals)
-- Not affiliated with Monex, the U.S. Mint, or any dealers
+- Not affiliated with Monex, the Royal Canadian Mint, or any dealers
 - Not financial advisors (no investment advice)
 - No endorsements of dealers or services
 
 ## Key Topics Covered
 
-- American Gold Eagle coin specifications (.9167 fine, 1 oz, $50 face value)
-- Gold Eagle vs Gold Buffalo vs Maple Leaf comparisons
+- Canadian Gold Maple Leaf coin specifications (.9999 fine, 1 oz, $50 CAD face value)
+- Gold Maple Leaf vs Gold Eagle vs Gold Buffalo comparisons
 - Premium and pricing dynamics
-- IRA eligibility for Gold Eagle coins
+- IRA eligibility for Gold Maple Leaf coins
 - Storage and authentication
 - Market dynamics affecting gold prices
 
 ## Product Focus
 
-The American Gold Eagle is:
-- 22-karat gold (.9167 fine purity)
-- 1 troy ounce of pure gold (1.0909 oz total weight)
-- U.S. legal tender with $50 face value
-- First minted in 1986
+The Canadian Gold Maple Leaf is:
+- 24-karat gold (.9999 fine purity)
+- 1 troy ounce of pure gold
+- Canadian legal tender with $50 CAD face value
+- First minted in 1979
 - IRA-eligible
-- Features Augustus Saint-Gaudens' Walking Liberty design
+- Features the maple leaf design and monarch portrait
 
 ## Pricing Data
 
-- Product pricing uses Monex API symbol: AE (American Eagle)
+- Product pricing uses Monex API symbol: LF (Canadian Maple Leaf)
 - Spot pricing uses Monex API symbol: GBXSPOT
 - Prices fetched fresh on page load only
 - No real-time updates or polling
@@ -60,7 +60,7 @@ The American Gold Eagle is:
 
 ## Contact
 
-Website: https://www.americaneaglegoldcoin.com
+Website: https://www.canadianmapleleafgoldcoins.com
 
 ## Disclaimer
 
